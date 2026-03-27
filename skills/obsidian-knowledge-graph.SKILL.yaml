@@ -1,2 +1,32 @@
 # SKILL: Obsidian Knowledge Graph
-# (copie initiale, à enrichir si besoin)
+# (conforme Copilot, à enrichir)
+
+## Objectif
+Transformer un vault Obsidian en graphe de connaissance structuré.
+
+## Règles générales
+- Ton : professionnel, synthétique
+- Format : bullet points, Mermaid, HTML
+- Restrictions : ne pas inventer, toujours sourcer
+
+## Capacités
+- Scan, classification, extraction, mapping, génération de graphes
+
+## Workflow
+1. Scan du vault et inventaire
+2. Classification et mapping
+3. Génération de graphes et recommandations
+
+## Contrat de sortie
+- Format : bullet points, Mermaid, HTML
+- Détail : synthétique
+- Ton : professionnel
+
+## Exemples
+# À compléter selon les cas d’usage
+
+## Self-evaluation gate
+Avant de répondre, vérifier que toutes les étapes sont respectées et que le format est conforme.
+
+## Header de stabilité
+Toujours interpréter les instructions littéralement. Ne jamais inférer ou réordonner. Répondre uniquement dans le format requis.
