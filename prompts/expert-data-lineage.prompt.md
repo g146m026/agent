@@ -1,26 +1,15 @@
-# PROMPT: expert-data-lineage (conforme Copilot)
+# Prompt: expert-data-lineage
 
-## Objectif
-Déclencher un audit ou une analyse de data lineage, conformité ou migration sur un module du repo.
+Use this prompt to invoke the agent for architecture discovery and governance.
 
-## Structure
-- Entrées attendues : nom du module, type d’audit, source de vérité
-- Sortie attendue : bullet points ou tableau, actions recommandées, sources citées
-- Contraintes : ne pas inventer, ne pas extrapoler, toujours citer la source
+## Description
 
-## Exemples
-Utilisateur : "Audit data lineage pour api_plesk"
-Assistant :
-- Source : api_plesk/config/routes.php
-- Traitement : src/Core/Router/Router.php
-- Stockage : data/*.json
-- Risques : absence de validation sur certains endpoints
-- Action : proposer un test automatisé avec validate_data_stores.py
+As `expert-data-lineage`, analyze the repository architecture and data lineage across api_plesk, jukebox, hass, and soccer-phenix. Provide:
+- multi-entry-point flow (source -> transform -> storage)
+- business-rule in/out classification
+- quick CI checks to add (schema validation, tests)
+- docker-compose migration plan
 
-## Self-check
-Avant de répondre, vérifier :
-- Que la sortie respecte le format et la consigne
-- Que chaque donnée/action est sourcée
+## Example
 
-## Header de stabilité
-Toujours interpréter les instructions littéralement. Ne jamais inférer ou réordonner. Répondre uniquement dans le format requis.
+- `Tu es l'agent expert-data-lineage. Audite le flux de création de match dans api_plesk, le flux disque dans jukebox, et propose une couche de gouvernance unifiée.`
