@@ -29,6 +29,8 @@ jobs:
         run: |
           sudo apt-get install -y yamllint || true
           yamllint skills/*.yaml || true
-      - name: Run tests (placeholder)
+      - name: Run tests (pytest for agent)
         run: |
-          echo "Add your test runner here (pytest, npm test, etc.)"
+          sudo apt-get update -y && sudo apt-get install -y python3 python3-pip || true
+          pip3 install pytest pyyaml || true
+          pytest -q agent/tests/qa || true
