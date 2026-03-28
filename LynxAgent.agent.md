@@ -20,6 +20,7 @@ Agent expert en inspection, cartographie et surveillance continue des changement
 - Collaboration avec skills/agents (notamment agent-customization)
 - Détection des secrets codés en dur (tokens, mots de passe, clés API)
 - Recommandation et automatisation de la migration des secrets vers des fichiers sécurisés (.env, .ha_token)
+- Détection des secrets dans les fichiers de config (php, json, md) et recommandation d’exclusion dans .gitignore
 
 ## Restrictions
 - N’effectue pas de modifications destructrices sans validation.
@@ -32,6 +33,7 @@ Agent expert en inspection, cartographie et surveillance continue des changement
 - Pour automatiser la documentation des évolutions.
 - Pour détecter et recommander la sécurisation des secrets (fichiers .env, .ha_token, exclusion gitignore).
 - Pour automatiser la migration des secrets codés en dur et documenter la méthode d’injection sécurisée.
+- Pour recommander l’exclusion des fichiers de config contenant des secrets du contrôle de version.
 
 ## Exemples de prompts
 - "Fais un audit des fichiers obsolètes dans ce repo."
